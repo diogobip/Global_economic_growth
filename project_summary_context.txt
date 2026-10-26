@@ -1,0 +1,21 @@
+PROJECT OVERVIEW & PROGRESS SUMMARY
+===================================
+
+1. PROJECT SCOPE & Intent:
+   - Topic: Quantitative Economic History & The Industrial Revolution (1760–1914).
+   - Core Research Question: Long-term economic divergence and the velocity of industrial takeoff among early vs. late adopters.
+   - Primary Dataset: Maddison Project Database (MPD 2023 / `mpd2023_web.xlsx`), specifically using the "Full data" sheet.
+   - Target Countries: GBR, NLD, DEU, FRA, USA, PRT, JPN.
+
+2. STRICT WORKFLOW ARCHITECTURE (No Python):
+   - Stage 1 [EXCEL]: Data exploration, structure verification, initial baseline cleaning.
+   - Stage 2 [SQL]: Data manipulation, time-series filtering, aggregate calculations (growth rates/benchmarks).
+   - Stage 3 [POWER BI]: Interactive visualizations and dashboard development (line charts for GDP per capita trajectory).
+
+3. KEY LESSONS & DATA DECISIONS:
+   - Pre-1820 Data Behavior: Pre-19th century historical data consists of intermittent benchmark estimates rather than continuous annual series.
+   - Null Handling Strategy: DO NOT globally delete rows containing NULLs in Excel, as doing so wipes out pre-1820 benchmarks (e.g., 1760). Keep raw benchmark rows intact in Excel and handle NULL filtering dynamically in SQL (`WHERE gdppc IS NOT NULL`).
+
+4. CURRENT STATUS & NEXT STEPS:
+   - Excel cleaning/verification phase completed.
+   - Ready to import the baseline dataset into SQL for query-based filtering (1760–1914), growth calculations, and staging views for Power BI.

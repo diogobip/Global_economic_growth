@@ -1,0 +1,15 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Excel Temporary / Lock Files
+~$*
+*.tmp
+
+# Power BI Local Cache / Backup Files
+*.bak
+
+# IDE / Editor Files
+.vscode/
+.idea/
