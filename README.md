@@ -12,11 +12,14 @@ Excel
 
 Sql 
 
-Data base Setup Schema Design and Import
+1. Data base Setup Schema Design and Import
 
-  
-Data manipulation
+2\. Data manipulation
+
+3\. Analyse gdp per capita 
+
+4\. Rank countries for each year in terms of gdp per capita 
 
 Power bi 
 
-visualisation
+visualisation 
